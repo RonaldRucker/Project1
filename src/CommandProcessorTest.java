@@ -6,7 +6,7 @@ import student.TestableRandom;
  * Test each possible command on its bounds,
  * if applicable to ensure they work properly. 
  * Also test passing improper command to ensure 
- * all class functionalities work as intended.
+ * all class functionalities work as intended. jsbfjks
  * 
  * @author <your_name>
  * @version <version_no>
