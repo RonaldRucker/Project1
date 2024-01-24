@@ -1,4 +1,4 @@
-package Project1;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -10,8 +10,9 @@ import student.TestCase;
  * which serves as the entry point of the command line
  * program.
  * 
- * @author <your_name>
- * @version <version_no>
+ * @author CS Staff
+ * 
+ * @version 2024-01-22
  */
 public class SkipListProjectTest extends TestCase {
 	

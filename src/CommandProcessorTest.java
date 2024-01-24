@@ -1,5 +1,3 @@
-package Project1;
-
 import student.TestCase;
 import student.TestableRandom;
 

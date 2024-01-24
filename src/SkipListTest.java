@@ -1,4 +1,3 @@
-package Project1;
 import java.util.Iterator;
 
 import org.junit.Test;
@@ -9,18 +8,18 @@ import student.TestableRandom;
 /**
  * This class tests the methods of SkipList class
  * 
- * @author <your_name>
- * @version <version_no>
+ * @author CS Staff
+ * 
+ * @version 2024-01-22
  */
 
-@SuppressWarnings("unused")
 public class SkipListTest extends TestCase {
 	
-	SkipList<String> sl;
+	SkipList<String, Rectangle> sl;
 	
 	public void setUp() {
 		// TODO: implement setup
-		sl = new SkipList<String>();
+		sl = new SkipList<String, Rectangle>();
 	}
 
 	/***
@@ -29,7 +28,7 @@ public class SkipListTest extends TestCase {
 	 */
 	public void testRandomLevelOne() {
 		TestableRandom.setNextBooleans(false);
-		sl = new SkipList<String>();
+		sl = new SkipList<String, Rectangle>();
 		int randomLevelValue = sl.randomLevel();
 		
 		// This returns 1 because the first preset 
@@ -47,7 +46,7 @@ public class SkipListTest extends TestCase {
 	 */
 	public void testRandomLevelFour() {
 		TestableRandom.setNextBooleans(true, true, true, false, true, false);
-		sl = new SkipList<String>();
+		sl = new SkipList<String, Rectangle>();
 		int randomLevelValue = sl.randomLevel();
 
 		// This returns 4 because the fourth preset 
