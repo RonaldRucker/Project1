@@ -15,11 +15,12 @@ public class RectangleTest extends TestCase {
      * Initializes a rectangle object to be used for the tests.
      */
     public void setUp() {
-        Rectangle rec = new Rectangle(1,2,3,4);
+        
     }
 
     // TODO: implement tests
     public void testDimensions() {
+        Rectangle rec = new Rectangle(1,2,3,4);
         assertEquals(rec.getxCoordinate(), 1);
     }
     
