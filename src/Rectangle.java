@@ -86,10 +86,23 @@ public class Rectangle {
      * @return true if the rectangle intersects with rec, false if not
      */
     public boolean intersect(Rectangle r2) {
-        return false;
+        
+        private int x2 = r2.getxCoordinate();
+        private int y2 = r2.getyCoordinate();
+        private int w2 = r2.getWidth();
+        private int h2 = r2.getHeight();
+        if ((xCoordinate + width < x2 || xCoordinate > x2 + w2) 
+            && (yCoordinate > y2 + h2 || yCoordinate + height < y2))
+        {
+            return false;
+        }
+        return true;
 
     }
 
+    /**
+     * 
+     */
 
     /**
      * Checks, if the invoking rectangle has the same coordinates as rec.
@@ -100,7 +113,18 @@ public class Rectangle {
      *         not
      */
     public boolean equals(Object rec) {
-        return false;
+        if (rec.getClass() != this.getClass())
+        {
+            return false;
+        }
+        else if(rec.getxCoordinate() != this.getxCoordinate() ||
+                rec.getxCoordinate() != this.getxCoordinate() ||
+                rec.getHeight() != this.getHeight() ||
+                rec.getWidth() != this.getWidth()) 
+        {
+            return false;
+        }
+        return true;
     }
 
 
@@ -122,6 +146,12 @@ public class Rectangle {
      * @return true if the rectangle has invalid parameters, false if not
      */
     public boolean isInvalid() {
+        if (this.getHeight() == 0 || 
+            this.getWidth() == 0 ||
+            this.getxCoordinate() == 0 ||
+            this.getyCoordinate() == 0) {
+        return true;
+        }
         return false;
     }
 }

@@ -25,4 +25,8 @@ public class CommandProcessorTest extends TestCase {
     
     // TODO: implement tests
 
+    public void testProcessor() {
+        
+    }
+    
 }
