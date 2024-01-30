@@ -87,10 +87,10 @@ public class Rectangle {
      */
     public boolean intersect(Rectangle r2) {
         
-        private int x2 = r2.getxCoordinate();
-        private int y2 = r2.getyCoordinate();
-        private int w2 = r2.getWidth();
-        private int h2 = r2.getHeight();
+        int x2 = r2.getxCoordinate();
+        int y2 = r2.getyCoordinate();
+        int w2 = r2.getWidth();
+        int h2 = r2.getHeight();
         if ((xCoordinate + width < x2 || xCoordinate > x2 + w2) 
             && (yCoordinate > y2 + h2 || yCoordinate + height < y2))
         {
@@ -113,14 +113,16 @@ public class Rectangle {
      *         not
      */
     public boolean equals(Object rec) {
+        Rectangle thisRec = (Rectangle)rec;
+        
         if (rec.getClass() != this.getClass())
         {
             return false;
         }
-        else if(rec.getxCoordinate() != this.getxCoordinate() ||
-                rec.getxCoordinate() != this.getxCoordinate() ||
-                rec.getHeight() != this.getHeight() ||
-                rec.getWidth() != this.getWidth()) 
+        else if(thisRec.getxCoordinate() != this.getxCoordinate() ||
+                thisRec.getxCoordinate() != this.getxCoordinate() ||
+                thisRec.getHeight() != this.getHeight() ||
+                thisRec.getWidth() != this.getWidth()) 
         {
             return false;
         }
