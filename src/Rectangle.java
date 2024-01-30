@@ -136,10 +136,10 @@ public class Rectangle {
      *         rectangle
      */
     public String toString() {
-        return ", " + xCoordinate +
-               ", " + yCoordinate +
-               ", " + height +
-               ", " + width + ")";
+        return xCoordinate + ", " +
+               yCoordinate + ", " + 
+               height + ", " + 
+               width + ")";
     }
 
 
