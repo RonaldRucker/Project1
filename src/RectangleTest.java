@@ -1,6 +1,6 @@
 
 import student.TestCase;
-
+import org.junit.Test;
 /**
  * This class tests the methods of Rectangle class,
  * ensuring that they work as they should.
